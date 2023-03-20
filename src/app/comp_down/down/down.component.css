@@ -1,0 +1,389 @@
+/* estilo para el contenedor general */
+.container_down_button_dad {
+    display: flex;
+    margin: 15px;
+    margin-bottom: -35px;
+}
+
+/* estilo para el contenedor de la izquierda */
+.container_down_button_left {
+    display: flex;
+    width: 30%;
+    margin-left: 0px;
+}
+
+/* estilo para la imagen de la izquierda */
+.container_down_button_left img {
+    width: 35%;
+    height: 80%;
+}
+
+/* estilo para el contenedor central */
+.container_down_button_center {
+    display: flex;
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+
+/* estilo para la imagen central */
+.container_down_button_center img {
+    width: 35%;
+    height: 80%;
+}
+
+/* estilo para el contenedor de la derecha */
+.container_down_button_rigth {
+    display: flex;
+    width: 30%;
+    margin-right: 0px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+
+/* estilo para la imagen de la derecha */
+.container_down_button_rigth img {
+    width: 35%;
+    height: 80%;
+}
+
+/* estilos para el texto de cada uno de los componentes en general */
+.down_button_rigth {
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.down_button_rigth h1 {
+    margin-top: 0px;
+    color: gray;
+}
+
+.down_button_rigth h3 {
+    margin-top: -15px;
+    font-size: 20px;
+    color: rgb(6, 6, 24);;
+    font-weight: bold;
+}
+
+.down_button_rigth h3:hover {
+    color: tomato;
+    cursor: pointer;
+}
+
+.down_button_rigth h3 {
+    margin-top: -15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.down_button_rigth p {
+    margin-top: -10px;
+    color: gray;
+}
+/* estilos para el texto de cada uno de los componentes en general */
+
+
+/* De aca en adelante seran las funciones responsivas de la pagina, 
+cada componente se acoplara a laas dimenciones de la pantalla en la que se encuentre */
+
+/* para pantallas de 1360px de ancho */
+@media (max-width: 1360px) {
+
+    .container_down_button_left img {
+        width: 35%;
+        height: 65%;
+    }
+
+    .container_down_button_center img {
+        width: 35%;
+        height: 65%;
+    }
+
+    .container_down_button_rigth img {
+        width: 35%;
+        height: 65%;
+    }
+
+}
+
+/* para pantallas de 1335px de ancho */
+@media (max-width: 1335px) {
+
+    .container_down_button_left img {
+        width: 35%;
+        height: 75%;
+    }
+
+    .container_down_button_center img {
+        width: 35%;
+        height: 75%;
+    }
+
+    .container_down_button_rigth img {
+        width: 35%;
+        height: 75%;
+    }
+
+    .down_button_rigth h1 {
+        font-size: 4vh;
+    }
+
+    .down_button_rigth h3 {
+        margin-top: -15px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .down_button_rigth p {
+        margin-top: -10px;
+        color: gray;
+        font-size: 13px;
+    }
+}
+
+/* para pantallas de 1275px de ancho */
+@media (max-width: 1275px) {
+    .container_down_button_left img {
+        width: 45%;
+        height: 65%;
+    }
+
+    .container_down_button_center img {
+        width: 45%;
+        height: 65%;
+    }
+
+    .container_down_button_rigth img {
+        width: 45%;
+        height: 65%;
+    }
+
+    .down_button_rigth h1 {
+        font-size: 5vh;
+    }
+
+    .down_button_rigth h3 {
+        margin-top: -15px;
+        font-size: 17px;
+    }
+
+    .down_button_rigth p {
+        margin-top: -10px;
+        font-size: 14px;
+    }
+}
+
+/* para pantallas de 1215px de ancho */
+@media (max-width: 1215px) {
+  
+    .container_down_button_left img {
+        height: 60%;
+    }
+
+    .container_down_button_center img {
+        height: 60%;
+    }
+
+    .container_down_button_rigth img {
+        height: 60%;
+    }
+
+    .down_button_rigth h1 {
+        font-size: 4.5vh;
+    }
+
+    .down_button_rigth h3 {
+        margin-top: -17px;
+        font-size: 16px;
+    }
+
+    .down_button_rigth p {
+        margin-top: -10px;
+        font-size: 13px;
+    }
+}
+
+
+/* para pantallas de 1095px de ancho */
+@media (max-width: 1095px) {
+  
+    .container_down_button_left img {
+        height: 60%;
+    }
+
+    .container_down_button_center img {
+        height: 60%;
+    }
+
+    .container_down_button_rigth img {
+        height: 60%;
+    }
+
+    .down_button_rigth h1 {
+        font-size: 4vh;
+    }
+
+    .down_button_rigth h3 {
+        font-size: 14px;
+    }
+
+    .down_button_rigth p {
+        margin-top: -10px;
+        font-size: 12px;
+    }
+}
+
+/* para pantallas de 795px de ancho */
+@media (max-width: 795px) {
+    .container_down_button_dad {
+        display: block;
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+
+    .container_down_button_left {
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .container_down_button_left img {
+        width: 22%;
+        height: 45%;
+    }
+
+    .container_down_button_center {
+        display: flex;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .container_down_button_center img {
+        width: 22%;
+        height: 45%;
+    }
+
+    .container_down_button_rigth {
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .container_down_button_rigth img {
+        width: 22%;
+        height: 45%;
+    }
+    
+    .down_button_rigth h1 {
+        margin-top: -7px;
+        font-size: 7vh;
+    }
+
+    .down_button_rigth h3 {
+        font-size: 22px;
+    }
+
+    .down_button_rigth p {
+        margin-top: -5px;
+        font-size: 20px;
+    }
+}
+
+/* para pantallas de 650px de ancho */
+@media (max-width: 650px) {
+  
+
+    .container_down_button_center {
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+    
+    .down_button_rigth h1 {
+        font-size: 6vh;
+    }
+
+    .down_button_rigth h3 {
+        font-size: 18px;
+    }
+
+    .down_button_rigth p {
+        font-size: 17px;
+    }
+}
+
+/* para pantallas de 600px de ancho */
+@media (max-width: 600px) {
+  
+    .container_down_button_center {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .down_button_rigth h3 {
+        font-size: 19px;
+    }
+
+    .down_button_rigth p {
+        font-size: 18px;
+    }
+}
+
+/* para pantallas de 500px de ancho */
+@media (max-width: 500px) {
+
+    .container_down_button_center {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .down_button_rigth h3 {
+        font-size: 17px;
+    }
+
+    .down_button_rigth p {
+        font-size: 16px;
+    }
+}
+
+/* para pantallas de 450px de ancho */
+@media (max-width: 450px) {
+
+    .container_down_button_center {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .down_button_rigth h1 {
+        margin-top: 0px;
+        font-size: 17px;
+    }
+
+    .down_button_rigth h3 {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .down_button_rigth p {
+        font-size: 10px;
+    }
+}
+
+/* para pantallas de 350px de ancho */
+@media (max-width: 305px) {
+
+    .container_down_button_center {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}

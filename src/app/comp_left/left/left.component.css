@@ -1,0 +1,331 @@
+/* estilos para el contenedor general */
+.left {
+    display: block;
+    width: 100%;
+    margin: 15px;
+    padding-right: 10px;
+    overflow: hidden;
+    height: 67vh;
+  }
+  
+  /* estilos la imagen del contenedor */
+  .left img {
+    width: 100%;
+    height: 60%;
+  }
+  
+  /* estilos para el contenido que esta bajo la imagen */
+  .contend_down{
+    display: block;
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+  }
+  
+  .contend_down_two{
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .down_one {
+    display: block;
+    width: 40%;
+    height: 60%;
+    margin: 0px;
+    margin-right: 40px;
+    margin-top: 15px;
+  }
+  
+  .down_one p{
+    font-size: 7.5vh;
+    margin: 0px;
+    line-height: 50px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .down_two {
+    width: 50%;
+    height: 40%;
+    margin-top: 5px;
+    right: auto;
+  }
+  
+  .down_two p{
+    font-size: 2.5vh;
+    margin-top: 13px;
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .down_two button{
+    border: none;
+    color: white;
+    background: tomato;
+    padding: 17px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 6px;
+    width: 55%;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .down_two button:hover {
+    background: rgb(6, 6, 24);
+    cursor: pointer;
+  }
+  /* estilos para el contenido que esta bajo la imagen */
+  
+  
+  /* De aca en adelante seran las funciones responsivas de la pagina, 
+  cada componente se acoplara a laas dimenciones de la pantalla en la que se encuentre */
+  
+  /* para pantallas de 1275px de ancho */
+  @media (max-width: 1275px) {
+  
+    .left {
+      width: 97%;
+      height: 57vh;
+    }
+  
+    .down_one {
+      width: 60%;
+      height: 60%;
+      margin: 0px;
+      margin-top: 10px;
+      margin-right: 40px;  
+    }
+  
+    .down_one p{
+      font-size: 7vh;
+      line-height: 45px;
+    }
+    
+    .down_two {
+      width: 80%;
+      height: 40%;
+      margin-top: 0px;
+      right: auto;
+      margin-right: 10px;
+    }
+    
+    .down_two p{
+      font-size: 15px;
+    }
+  
+    .down_two button{
+      letter-spacing: 6px;
+      width: 55%;
+      display: inline-block;
+      font-size: 10px;
+      margin-top: 7px;
+    }
+  
+    .down_one p{
+      font-size: 6vh;
+      line-height: 45px;
+    }
+  }
+  
+  /* para pantallas de 1225px de ancho */
+  @media (max-width: 1225px) { 
+    .down_two button{
+      letter-spacing: 6px;
+      width: 65%;
+      display: inline-block;
+      font-size: 10px;
+      margin-top: 7px;
+    }
+  }
+  
+  /* para pantallas de 1150px de ancho */
+  @media (max-width: 1150px) { 
+  
+    .down_one p {
+      font-size: 5.5vh;
+      line-height: 45px;
+    }
+  
+    .down_two p{
+      font-size: 14px;
+    }
+  }
+  
+  /* para pantallas de 1095px de ancho */
+  @media (max-width: 1095px) {
+    .down_two button{
+      letter-spacing: 5px;
+      width: 70%;
+    }
+  }
+  
+  /* para pantallas de 890px de ancho */
+  @media (max-width: 890px) {
+    
+    .down_one p {
+      font-size: 5vh;
+      line-height: 40px;
+    }
+  
+    .down_two p{
+      font-size: 13.1px;
+    }
+  }
+  
+  /* para pantallas de 930px de ancho */
+  @media (max-width: 830px) {
+    .down_two button{
+      letter-spacing: 4px;
+      width: 75%;
+    }
+  }
+  
+  /* para pantallas de 795px de ancho */
+  @media (max-width: 795px) {
+    .left {
+      display: block;
+      width: 100%;
+      margin: 0px;
+      overflow: hidden;
+      height: 135vh;
+    }  
+  
+    /* Estilo de la imagen que se coloca en el div */
+  
+    /* aca se oculta la imagen dentro del div para que no interfiera con la otra */
+    .imagen_left img{ 
+      display: none;
+    }
+  
+    .imagen_left {
+      width: 100%;
+      height: 50%;
+    }
+  
+    .imagen_left {
+      background-size: cover;
+      background-image: url('./../../../assets/images/image-web-3-mobile.jpg');
+    }
+   /* Estilo de la imagen que se coloca en el div */
+  
+    .contend_down{
+      height: 100%;
+    }
+    
+    .contend_down_two{
+      display: block;
+    }
+    
+    .down_one {
+      display: block;
+      width: 100%;
+      height: 60%;
+      margin: 0px;
+      margin-right: 0px;
+      margin-top: 15px;
+    }
+    
+    .down_one p{
+      font-size: 10vh;
+      line-height: 60px;
+    }
+    
+    .down_two {
+      width: 90%;
+      height: 40%;
+      margin-top: 0px;
+      right: auto;
+    }
+    
+    .down_two p{
+      font-size: 3vh;
+    }
+    
+  }
+  
+  /* para pantallas de 680px de ancho */
+  @media (max-width: 680px) {
+  
+    .down_one p{
+      font-size: 8vh;
+      line-height: 60px;
+    }
+    
+    .down_two p{
+      font-size: 3vh;
+    }
+  
+    .down_two button{
+      letter-spacing: 5px;
+      width: 65%;
+    }
+    
+  }
+  
+  /* para pantallas de 550px de ancho */
+  @media (max-width: 550px) {
+  
+    .down_one p{
+      line-height: 50px;
+    }
+    
+    .down_two p{
+      font-size: 3vh;
+    }
+  
+    .down_two button{
+      letter-spacing: 5px;
+      width: 60%;
+    }
+    
+  }
+  
+  /* para pantallas de 500px de ancho */
+  @media (max-width: 500px) {
+  
+    .imagen_left {
+      width: 100%;
+      height: 45%;
+    }
+    
+    .down_one p{
+      font-size: 7vh;
+      line-height: 45px;
+    }
+    
+    .down_two p{
+      font-size: 15px;
+    }
+  
+    .down_two button{
+      letter-spacing: 5px;
+      width: 55%;
+    }
+    
+  }
+  
+  /* para pantallas de 355px de ancho */
+  @media (max-width: 355px) {
+  
+    .down_one p{
+      font-size: 6vh;
+      line-height: 35px;
+    }
+    
+    .down_two p{
+      font-size: 13px;
+    }
+  
+    .down_two button{
+      font-size: 9px;
+      letter-spacing: 6px;
+      width: 65%;
+    }
+    
+  }
+  
+  
+  

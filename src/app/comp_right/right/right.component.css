@@ -1,0 +1,191 @@
+/* estilos para el contenedor general */
+.right {
+    background: rgb(6, 6, 24);
+    margin-top: 15px;
+    display: block;
+    width: 90%;
+    margin-left: 35px;
+    overflow: hidden;
+    height: 64vh;
+  }
+  
+  /* estilos para el contenedor interno, que contiene el titulo y el texto */
+  .content_rigth {
+    margin: 25px;
+    color: #fff;
+  }
+  
+  .content_rigth h1 {
+    color: orange;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .text_rigth {
+    margin: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .text_rigth h3:hover {
+    color: orange;
+    cursor: pointer;
+  }
+  
+  .content_rigth_text p {
+    color: gray;
+  }
+  
+  .content_rigth_text hr {
+    border-color: gray;
+  }
+  /* estilos para el contenedor interno, que contiene el titulo y el texto */
+  
+  /* De aca en adelante seran las funciones responsivas de la pagina, 
+  cada componente se acoplara a laas dimenciones de la pantalla en la que se encuentre */
+  
+  /* para pantallas de 1275px de ancho */
+  @media (max-width: 1275px) {
+    .right {
+      width: 95%;
+      height: 57vh;
+    }
+  
+    .content_rigth {
+      margin: 25px;
+      color: #fff;
+    }
+  
+    .content_rigth h1 {
+      color: orange;
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  
+    .content_rigth h3 {
+      font-size: 17px;
+      margin-top: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  
+    .content_rigth_text p {
+      color: gray;
+      font-size: 15px;
+    }
+  }
+  
+  /* para pantallas de 795px de ancho */
+  @media (max-width: 795px) {
+    .right {
+      background: rgb(6, 6, 24);
+      margin-top: 40px;
+      display: block;
+      width: 100%;
+      margin-left: 0px;
+      overflow: hidden;
+      height: 70vh;
+    }
+  
+    .content_rigth {
+      margin: 35px;
+      color: #fff;
+    }
+  
+    .content_rigth h3 {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  
+    .content_rigth_text p {
+      font-size: 17px;
+    }
+  }
+  
+  /* para pantallas de 765px de ancho */
+  @media (max-width: 765px) {
+    .right {
+      height: 77vh;
+    }
+  }
+  
+  /* para pantallas de 600px de ancho */
+  @media (max-width: 600px) {
+    .right {
+      background: rgb(6, 6, 24);
+      margin-top: 40px;
+      display: block;
+      width: 100%;
+      margin-left: 0px;
+      overflow: hidden;
+      height: 77vh;
+    }
+  }
+  
+  /* para pantallas de 500px de ancho */
+  @media (max-width: 500px) {
+    .right {
+      height: 80vh;
+    }
+  
+    .content_rigth {
+      margin: 30px;
+    }
+  }
+  
+  /* para pantallas de 450px de ancho */
+  @media (max-width: 450px) {
+    .right {
+      background: rgb(6, 6, 24);
+      margin-top: 40px;
+      display: block;
+      width: 100%;
+      margin-left: 0px;
+      overflow: hidden;
+      height: 77vh;
+    }
+  }
+  
+  /* para pantallas de 400px de ancho */
+  @media (max-width: 400px) {
+  
+    .content_rigth h3 {
+      font-size: 15px;
+      margin-top: 17px;
+    }
+  
+    .content_rigth_text p {
+      font-size: 15px;
+    }
+  }
+  
+  /* para pantallas de 360px de ancho */
+  @media (max-width: 360px) {
+  
+    .content_rigth {
+      margin: 25px;
+    }
+  
+    .content_rigth h3 {
+      margin-top: 16px;
+    }
+  
+    .content_rigth_text p {
+      font-size: 14px;
+    }
+  }
+  
+  /* para pantallas de 305px de ancho */
+  @media (max-width: 305px) {
+  
+    .content_rigth {
+      margin: 15px;
+    }
+  
+    .content_rigth h3 {
+      font-size: 13px;
+      margin-top: 15px;
+    }
+  
+    .content_rigth_text p {
+      font-size: 13px;
+    }
+  }

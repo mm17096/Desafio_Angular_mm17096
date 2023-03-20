@@ -1,0 +1,340 @@
+/* estilos generales del menu */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Animacion para boton de barras */
+/* estilo del level */
+label {
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    margin: 10px;
+    background: transparent;
+    gap: .65rem;
+}
+
+/* estilos de los div que seral las barras */
+label>div {
+    background: black;
+    height: 2px;
+    width: 100%;
+    height: 5%;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+
+/* estilos que tendran los div al no tener la clase is active, seran barras normales*/
+.checkbtn .linea:first-child {
+    transform: rotate(0);
+}
+
+.checkbtn .linea:nth-child(2) {
+    opacity: 1;
+}
+
+.checkbtn .linea:last-child {
+    transform: rotate(0);
+}
+
+/* estilos que tendran los div al tener la clase is active sera una x*/
+.checkbtn.is-active .linea:first-child {
+    transform: rotate(32deg);
+}
+
+.checkbtn.is-active .linea:nth-child(2) {
+    opacity: 0;
+}
+
+.checkbtn.is-active .linea:last-child {
+    transform: rotate(-32deg);
+}
+
+/* estilos para las barras dek menu */
+.checkbtn {
+    font-size: 30px;
+    color: #333;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* ocultamos el check adicional que ocupamos como input */
+#check {
+    display: none;
+}
+
+/* Animacion para boton de barras */
+
+
+
+/* estilos generales del contenedor principal */
+nav {
+    height: 50px;
+    width: 100%;
+    margin-top: -5px;
+}
+
+/* estilos para el logo W. */
+nav img{
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+/* estilos para e menu */
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a {
+    color: gray;
+    font-size: 15px;
+    padding: 7px 13px;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    color: tomato;
+    transition: .5s;
+    cursor: pointer;
+}
+/* estilos para e menu */
+
+section {
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+
+/* De aca en adelante seran las funciones responsivas de la pagina, 
+cada componente se acoplara a laas dimenciones de la pantalla en la que se encuentre */
+
+/* para pantallas de 1275px de ancho */
+@media (max-width: 1275px) {
+    nav {
+        width: 103%;
+        margin-left: -15px;
+    }
+}
+
+/* para pantallas de 858px de ancho */
+@media (max-width: 858px) {
+
+    /* mostramos el logo de barras */
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        height: 50px;
+        width: 107%;
+        margin-top: -5px;
+    }
+
+    nav p{
+        font-size: 9vh;
+    }
+
+    label {
+        width: 50px;
+      }      
+
+    ul {
+        position: fixed;
+        width: 30%;
+        height: 100vh;
+        background: #fff;
+        top: 0px;
+        right: -30%;
+        text-align: left;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px;
+        line-height: 25px;
+    }
+
+    nav ul {
+        margin-top: 60px;
+        margin-right: 0px;
+    }
+
+    /* animacion del loogo de barras y aparicion de nuevo menu lateral */
+    #check:checked~ul {
+        right: 0;
+        box-shadow: 0 725px 10px 100vh rgba(0, 0, 0, 0.5);
+    }
+
+    #check:checked~ul li a {
+        color: black;
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    #check:checked~ul li a:hover {
+        color: tomato;
+        transition: .5s;
+    }
+}
+
+/* para pantallas de 658px de ancho */
+@media (max-width: 658px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    nav p{
+        margin-left: -15px;
+        margin-top: 7px;
+        font-size: 8.5vh;
+    }
+
+    label {
+        width: 45px;
+      }    
+
+    ul {
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        background: #fff;
+        top: 60px;
+        right: -70%;
+        text-align: left;
+        transition: all .5s;
+    }
+
+    nav ul li a {
+        color: gray;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: none;
+        font-weight: lighter;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    #check:checked~ul {
+        right: 0;
+        padding-left: 15%;
+    }
+
+}
+
+/* para pantallas de 550px de ancho */
+@media (max-width: 550px) {
+    nav p{
+        margin-top: 7px;
+        font-size: 8vh;
+    }
+}
+
+/* para pantallas de 500px de ancho */
+@media (max-width: 500px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: #fff;
+        top: 60px;
+        right: -70%;
+        text-align: left;
+        transition: all .5s;
+    }
+
+    nav ul li a {
+        color: gray;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: none;
+        font-weight: lighter;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    #check:checked~ul {
+        right: 0;
+        padding-left: 15%;
+    }
+
+}
+
+/* para pantallas de 450px de ancho */
+@media (max-width: 450px) {
+    nav p{
+        margin-top: 12px;
+        font-size: 8.5vh;
+    }
+}
+
+/* para pantallas de 350px de ancho */
+@media (max-width: 350px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        background: #fff;
+        top: 60px;
+        right: -70%;
+        text-align: left;
+        transition: all .5s;
+    }
+
+    nav ul li a {
+        color: gray;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: none;
+        font-weight: lighter;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    #check:checked~ul {
+        right: 0;
+        padding-left: 15%;
+    }
+
+}

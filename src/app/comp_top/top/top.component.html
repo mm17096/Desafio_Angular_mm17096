@@ -1,0 +1,26 @@
+<!-- contenedor de todo el menu etiqueta nav -->
+<nav>
+    <!-- contenido de el menu cuando se despliqgue a la derecha y se oculte, este sera el boton -->
+    <input type="checkbox" id="check" />
+    <!-- colocamos al label la funcion del componente.ts y la variable isActive que se manipula ahi mismo 
+        y permite que esta con la clase is-active active la funcion css para formar la X y al dar un segundo clic
+    cambia a su fomrma normal las que eson las tres barras -->
+    <label for="check" class="checkbtn" [ngClass]="{'is-active': isActive}" (click)="toggleActive()">
+        <div class="linea"></div>
+        <div class="linea"></div>
+        <div class="linea"></div>
+    </label>
+    <!-- contenido de el menu cuando se despliqgue a la derecha y se oculte, este sera el boton -->
+
+    <!-- Imagen o logo W.  -->
+    <img src="./../../../assets/images/logo.svg">
+
+    <!-- Contenido del menu, son las opciones -->
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+    </ul>
+</nav>
